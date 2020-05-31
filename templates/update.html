@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action='' method='POST'>{% csrf_token %}
+	<div class='container'>
+	<p>{{ form.title }}</p>
+	<p>{{ form.memo }}</p>
+	<p>{{ form.priority }}</p>
+	<p>{{ form.duedate }}</p>
+	<input type="submit" value='更新する'>
+	</div>
+</form>
+{% endblock content %}
